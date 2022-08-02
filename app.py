@@ -14,9 +14,9 @@ CORS(app)
 #     }
 # })
 
-triple_addr = 'http://172.18.22.17:3030/ds'
-# endpoint = 'http://172.18.22.17:7201/repositories/data'
-mapper = TermMapper(SPARQLTripleStore(triple_addr + '/sparql', update_endpoint=triple_addr + '/update'))
+# triple_addr = 'http://172.18.22.17:3030/ds'
+endpoint = 'http://172.18.22.17:7200/repositories/data'
+mapper = TermMapper(SPARQLTripleStore(endpoint, update_endpoint=endpoint + '/statements'))
 
 @app.route('/classes', methods=['GET'])
 def get_classes():
