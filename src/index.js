@@ -117,7 +117,7 @@ class TermMapper extends React.Component {
 
             {/* Class select */}
             <select size={20}>
-            <option disabled value> -- select an option -- </option>
+            <option disabled value> -- Information Elements -- </option>
             {
                 this.state.classes.map((el) => {
                     return (
@@ -133,7 +133,7 @@ class TermMapper extends React.Component {
 
             {/* Local value select */}
             <select size={20}>
-            <option disabled value>{ this.state.localVals.length > 0 ? '-- select an option -- ' : ' -- select a class to map -- '}</option>
+            <option disabled value>{ this.state.localVals.length > 0 ? '-- Select local value -- ' : ' -- Select local value -- '}</option>
             {
                 this.state.localVals.map((value) => {
                     // Display local value, colour it green if a mapping exists for it
@@ -161,7 +161,7 @@ class TermMapper extends React.Component {
 
             {/* Target class select */}
             <select size={20}>
-            <option disabled value>{ this.state.localVals.length > 0 ? '-- select an option -- ' : ' -- select a class to map -- '}</option>
+            <option disabled value>{ this.state.localVals.length > 0 ? '-- Select terminology value -- ' : ' -- Select terminology value -- '}</option>
             {
                 this.state.targets.map((el) => {
                     // Display the target class, colour it green if a mapping exists
