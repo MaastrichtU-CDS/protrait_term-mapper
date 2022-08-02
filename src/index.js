@@ -142,7 +142,10 @@ class TermMapper extends React.Component {
                             <option 
                                 key={value} 
                                 onClick={() => this.handleSelectLocalVal(value)}
-                                style={{color: 'green'}}>
+                                style={{
+                                    // color: 'green',
+                                    "background-color": 'lightgreen',
+                                    }}>
                                 {value}
                             </option>
                         )
@@ -172,7 +175,10 @@ class TermMapper extends React.Component {
                                 <option 
                                     key={el.uri} 
                                     onClick={() => this.handleSelectTarget(el.uri)}
-                                    style={{color: 'green'}}>
+                                    style={{
+                                        // color: 'green',
+                                        'background-color': 'lightgreen'
+                                        }}>
                                     {'label' in el ? el.label : el.uri}
                                 </option>
                             )
