@@ -24,49 +24,50 @@ class TermMapper():
                 ?obj roo:local_value ?value .
                 OPTIONAL { ?type rdfs:label ?label . }
                 FILTER(?type NOT IN (owl:NamedIndividual, owl:Thing)).
+                FILTER(!isBlank(?type)).
             }
             ORDER BY ?type
         '''
 
         # Alternative query (including check on whether it's been mapped)
-        # '''
-        # PREFIX roo: <http://www.cancerdata.org/roo/>
-        # PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        # PREFIX owl: <http://www.w3.org/2002/07/owl#>
-        # PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        # PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-        # SELECT DISTINCT ?type ?label ?value
-        # FROM <http://www.ontotext.com/explicit>
-        # WHERE {
-        #     ?obj rdf:type ?type.
-        #     ?obj roo:local_value ?value .
-        #     OPTIONAL { ?type rdfs:label ?label . }
-        #     FILTER(?type NOT IN (owl:NamedIndividual, owl:Thing)) .
-        #     FILTER NOT EXISTS {
-        #         ?type owl:equivalentClass [            
-        #             rdf:type owl:Class;
-        #             owl:intersectionOf [
-        #                 rdf:first ?type2;
-        #                 rdf:rest [
-        #                     rdf:first [
-        #                         rdf:type owl:Class;
-        #                         owl:unionOf [
-        #                             rdf:first [
-        #                                 rdf:type owl:Restriction;
-        #                                 owl:hasValue ?value;
-        #                                 owl:onProperty roo:local_value;
-        #                             ];
-        #                             rdf:rest rdf:nil;
-        #                         ]
-        #                     ];
-        #                     rdf:rest rdf:nil;
-        #                 ]
-        #             ]
-        #         ]
-        #     } .
-        # }
-        # ORDER BY ?type
-        # '''
+        query = '''
+        PREFIX roo: <http://www.cancerdata.org/roo/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        SELECT DISTINCT ?type ?label
+        FROM <http://www.ontotext.com/explicit>
+        WHERE {
+            ?obj rdf:type ?type.
+            ?obj roo:local_value ?value .
+            OPTIONAL { ?type rdfs:label ?label . }
+            FILTER(?type NOT IN (owl:NamedIndividual, owl:Thing)) .
+            FILTER NOT EXISTS {
+                ?type owl:equivalentClass [            
+                    rdf:type owl:Class;
+                    owl:intersectionOf [
+                        rdf:first ?type2;
+                        rdf:rest [
+                            rdf:first [
+                                rdf:type owl:Class;
+                                owl:unionOf [
+                                    rdf:first [
+                                        rdf:type owl:Restriction;
+                                        owl:hasValue ?value;
+                                        owl:onProperty roo:local_value;
+                                    ];
+                                    rdf:rest rdf:nil;
+                                ]
+                            ];
+                            rdf:rest rdf:nil;
+                        ]
+                    ]
+                ]
+            } .
+        }
+        ORDER BY ?type
+        '''
 
         results = self.tripleStore.sparql_get(query)
 
