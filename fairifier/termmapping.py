@@ -284,3 +284,64 @@ class TermMapper():
         """ % (target, type, value)
 
         self.tripleStore.sparql_update(query)
+    
+    def delete_mapping(self, classUri, value, targetUri):
+        # TODO: add support for other local_value preds
+        query = """
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX roo: <http://www.cancerdata.org/roo/>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            DELETE {
+                GRAPH <http://data.local/mapping> {
+                    ?target owl:equivalentClass [
+                        rdf:type owl:Class;
+                        owl:intersectionOf [
+                            rdf:first ?class;
+                            rdf:rest [
+                                rdf:first [
+                                    rdf:type owl:Class;
+                                    owl:unionOf [
+                                        rdf:first [
+                                            rdf:type owl:Restriction;
+                                            owl:hasValue ?value;
+                                            owl:onProperty roo:local_value;
+                                        ];
+                                        rdf:rest rdf:nil;
+                                    ]
+                                ];
+                                rdf:rest rdf:nil;
+                            ]
+                        ]
+                    ].
+                }
+            }
+            WHERE {
+                GRAPH <http://data.local/mapping> {
+                    ?target owl:equivalentClass [
+                        rdf:type owl:Class;
+                        owl:intersectionOf [
+                            rdf:first ?class;
+                            rdf:rest [
+                                rdf:first [
+                                    rdf:type owl:Class;
+                                    owl:unionOf [
+                                        rdf:first [
+                                            rdf:type owl:Restriction;
+                                            owl:hasValue ?value;
+                                            owl:onProperty roo:local_value;
+                                        ];
+                                        rdf:rest rdf:nil;
+                                    ]
+                                ];
+                                rdf:rest rdf:nil;
+                            ]
+                        ]
+                    ].
+                }
+                BIND (<%s> AS ?class).
+                BIND (<%s> AS ?value).
+                BIND (<%s> AS ?target).
+            }
+        """ % (classUri, value, targetUri)
+        self.tripleStore.sparql_update(query)

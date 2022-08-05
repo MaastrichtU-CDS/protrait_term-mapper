@@ -62,5 +62,16 @@ def add_mapping():
         'mappings': {mapping['value']: str(mapping['target'])for mapping in mappings}
     }
 
+@app.route("/delete-mapping", methods=["POST"])
+def delete_mapping():
+    source_class = URIRef(request.form.get('class'))
+    value = request.form.get('value')
+    target = URIRef(request.form.get('target'))
+
+    mapper.delete_mapping(source_class, value, target)
+    return {
+        'mappings': mapper.get_mappings()
+    }
+
 if __name__ == "__main__":
     app.run(debug=True)
