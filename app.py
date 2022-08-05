@@ -41,6 +41,13 @@ def get_local_values():
         'mappings': {mapping['value']: str(mapping['target']) for mapping in mappings}
     }
 
+@app.route("/mappings", methods=['GET'])
+def get_mappings():
+    mappings = mapper.get_mappings()
+    return {
+        'mappings': mappings
+    }
+
 @app.route("/add-mapping", methods=['POST'])
 def add_mapping():
     source_class = URIRef(request.form.get('class'))

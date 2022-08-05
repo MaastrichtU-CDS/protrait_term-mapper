@@ -129,6 +129,62 @@ class TermMapper():
 
         return target
 
+    def get_mappings(self) -> None:
+        """Retrieves all mappings stored in the system
+        """
+
+        # TODO: add support for other local_value preds
+        query = """
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX roo: <http://www.cancerdata.org/roo/>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            SELECT DISTINCT ?class ?classLabel ?target ?targetLabel ?value
+            WHERE {
+                GRAPH <http://data.local/mapping> {
+                    ?target owl:equivalentClass [
+                        rdf:type owl:Class;
+                        owl:intersectionOf [
+                            rdf:first ?class;
+                            rdf:rest [
+                                rdf:first [
+                                    rdf:type owl:Class;
+                                    owl:unionOf [
+                                        rdf:first [
+                                            rdf:type owl:Restriction;
+                                            owl:hasValue ?value;
+                                            owl:onProperty roo:local_value;
+                                        ];
+                                        rdf:rest rdf:nil;
+                                    ]
+                                ];
+                                rdf:rest rdf:nil;
+                            ]
+                        ]
+                    ].
+                }
+                FILTER (datatype(?value) = xsd:string).
+                OPTIONAL { ?class rdfs:label ?classLabel }.
+                OPTIONAL { ?target rdfs:label ?targetLabel }.
+            } ORDER BY ?classLabel ?targetLabel
+        """
+
+        results = self.tripleStore.sparql_get(query)
+
+        mapping = []
+
+        for res in results:
+            new = {
+                'class': res['class']['value'],
+                'classLabel': res['classLabel']['value'],
+                'value': res['value']['value'],
+                'target': res['target']['value'],
+                'targetLabel': res['targetLabel']['value']}
+
+            mapping.append(new)
+
+        return mapping
+
     def get_mappings_for_class(self, type: URIRef) -> None:
         """Adds a mapping to the database - essentially an 
         equivalent class in OWL that implies any object that has
