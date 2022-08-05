@@ -117,6 +117,7 @@ class TermMapper extends React.Component {
                     this.setState({
                         mappings: json.mappings
                     });
+                    this.refreshMappings();
                 },
                 formData
             );
@@ -183,7 +184,7 @@ class TermMapper extends React.Component {
                                         onClick={() => this.handleSelectLocalVal(value)}
                                         style={{
                                             // color: 'green',
-                                            "background-color": 'lightgreen',
+                                            backgroundColor: 'lightgreen',
                                         }}>
                                         {value}
                                     </option>
@@ -216,7 +217,7 @@ class TermMapper extends React.Component {
                                             onClick={() => this.handleSelectTarget(el.uri)}
                                             style={{
                                                 // color: 'green',
-                                                'background-color': 'lightgreen'
+                                                backgroundColor: 'lightgreen'
                                             }}>
                                             {'label' in el ? el.label : el.uri}
                                         </option>
