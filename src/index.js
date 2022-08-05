@@ -19,7 +19,7 @@ function do_request(method, endpoint, handler, payload = null) {
             if (xhr.status === 200) {
                 var response = xhr.responseText;
                 var json = JSON.parse(response);
-                
+
                 handler(json);
             }
         }
@@ -28,7 +28,7 @@ function do_request(method, endpoint, handler, payload = null) {
     xhr.open(method, apiEndpoint + endpoint);
     xhr.send(payload);
 }
-    
+
 class TermMapper extends React.Component {
     constructor(props) {
         super(props);
@@ -39,16 +39,28 @@ class TermMapper extends React.Component {
             localVals: [],
             selectedLocalVal: null,
             targets: [],
-            mappings: {}
+            mappings: {},
+            storedMappings: []
         };
+    }
+
+    refreshMappings() {
+        do_request('GET', '/mappings', (json) => {
+            //(re-)renders the component at React's on convenience
+            this.setState({
+                storedMappings: json.mappings
+            });
+        });
     }
 
     componentDidMount() {
         do_request('GET', '/classes', (json) => {
+            //(re-)renders the component at React's on convenience
             this.setState({
                 classes: json.classes
             });
         });
+        this.refreshMappings();
     }
 
     handleSelectClass(name) {
@@ -61,7 +73,7 @@ class TermMapper extends React.Component {
         formData.append('class', name);
 
         do_request(
-            'POST', 
+            'POST',
             '/values', (json) => {
                 this.setState({
                     selectedClass: name,
@@ -100,7 +112,7 @@ class TermMapper extends React.Component {
 
             do_request(
                 'POST',
-                '/add-mapping', 
+                '/add-mapping',
                 (json) => {
                     this.setState({
                         mappings: json.mappings
@@ -111,101 +123,126 @@ class TermMapper extends React.Component {
         }
     }
 
+    listMappings() {
+        return (
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Information element</th>
+                            <th>Local value</th>
+                            <th>Terminology value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {
+                        this.state.storedMappings.map((mapping, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td>{mapping.classLabel}</td>
+                                    <td>{mapping.value}</td>
+                                    <td>{mapping.targetLabel}</td>
+                                </tr>
+                            )
+                        })
+                    }
+                    </tbody>
+                </table>
+        )
+    }
+
     render() {
         return (
             <div className={"Termmapper"}>
 
-            {/* Class select */}
-            <select size={20}>
-            <option disabled value> -- Information Elements -- </option>
-            {
-                this.state.classes.map((el) => {
-                    return (
-                        <option 
-                            key={el.uri} 
-                            onClick={() => this.handleSelectClass(el.uri)}>
-                            {'label' in el ? el.label : el.uri}
-                        </option>
-                    )
-                })
-            }
-            </select>
-
-            {/* Local value select */}
-            <select size={20}>
-            <option disabled value>{ this.state.localVals.length > 0 ? '-- Select local value -- ' : ' -- Select local value -- '}</option>
-            {
-                this.state.localVals.map((value) => {
-                    // Display local value, colour it green if a mapping exists for it
-                    if (value in this.state.mappings) {
-                        return (
-                            <option 
-                                key={value} 
-                                onClick={() => this.handleSelectLocalVal(value)}
-                                style={{
-                                    // color: 'green',
-                                    "background-color": 'lightgreen',
-                                    }}>
-                                {value}
-                            </option>
-                        )
-                    }
-                    return (
-                        <option 
-                                key={value} 
-                                onClick={() => this.handleSelectLocalVal(value)}>
-                                {value}
-                        </option>
-                    )
-                    
-                })
-            }
-            </select>
-
-            {/* Target class select */}
-            <select size={20}>
-            <option disabled value>{ this.state.localVals.length > 0 ? '-- Select terminology value -- ' : ' -- Select terminology value -- '}</option>
-            {
-                this.state.targets.map((el) => {
-                    // Display the target class, colour it green if a mapping exists
-                    // for the currently selected local value mapped to this target value
-                    if (this.state.selectedLocalVal in this.state.mappings) {
-                        if (this.state.mappings[this.state.selectedLocalVal] === el.uri) {
+                {/* Class select */}
+                <select size={20}>
+                    <option disabled value> -- Information Elements -- </option>
+                    {
+                        this.state.classes.map((el) => {
                             return (
-                                <option 
-                                    key={el.uri} 
-                                    onClick={() => this.handleSelectTarget(el.uri)}
-                                    style={{
-                                        // color: 'green',
-                                        'background-color': 'lightgreen'
-                                        }}>
+                                <option
+                                    key={el.uri}
+                                    onClick={() => this.handleSelectClass(el.uri)}>
                                     {'label' in el ? el.label : el.uri}
                                 </option>
                             )
-                        }
+                        })
                     }
-                    return (
-                        <option 
-                            key={el.uri} 
-                            onClick={() => this.handleSelectTarget(el.uri)}>
-                            {'label' in el ? el.label : el.uri}
-                        </option>
-                    )
-                    
-                })
-            }
-            </select>
+                </select>
 
+                {/* Local value select */}
+                <select size={20}>
+                    <option disabled value>{this.state.localVals.length > 0 ? '-- Select local value -- ' : ' -- Select local value -- '}</option>
+                    {
+                        this.state.localVals.map((value) => {
+                            // Display local value, colour it green if a mapping exists for it
+                            if (value in this.state.mappings) {
+                                return (
+                                    <option
+                                        key={value}
+                                        onClick={() => this.handleSelectLocalVal(value)}
+                                        style={{
+                                            // color: 'green',
+                                            "background-color": 'lightgreen',
+                                        }}>
+                                        {value}
+                                    </option>
+                                )
+                            }
+                            return (
+                                <option
+                                    key={value}
+                                    onClick={() => this.handleSelectLocalVal(value)}>
+                                    {value}
+                                </option>
+                            )
+
+                        })
+                    }
+                </select>
+
+                {/* Target class select */}
+                <select size={20}>
+                    <option disabled value>{this.state.localVals.length > 0 ? '-- Select terminology value -- ' : ' -- Select terminology value -- '}</option>
+                    {
+                        this.state.targets.map((el) => {
+                            // Display the target class, colour it green if a mapping exists
+                            // for the currently selected local value mapped to this target value
+                            if (this.state.selectedLocalVal in this.state.mappings) {
+                                if (this.state.mappings[this.state.selectedLocalVal] === el.uri) {
+                                    return (
+                                        <option
+                                            key={el.uri}
+                                            onClick={() => this.handleSelectTarget(el.uri)}
+                                            style={{
+                                                // color: 'green',
+                                                'background-color': 'lightgreen'
+                                            }}>
+                                            {'label' in el ? el.label : el.uri}
+                                        </option>
+                                    )
+                                }
+                            }
+                            return (
+                                <option
+                                    key={el.uri}
+                                    onClick={() => this.handleSelectTarget(el.uri)}>
+                                    {'label' in el ? el.label : el.uri}
+                                </option>
+                            )
+
+                        })
+                    }
+                </select>
+            { this.listMappings() }
             </div>
-
-            );
-        }
+        );
     }
-    
-    // ========================================
-    
+}
+
+// ========================================
+
 ReactDOM.render(
     <TermMapper />,
     document.getElementById('root')
-    );
-        
+);
