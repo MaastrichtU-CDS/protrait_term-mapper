@@ -4,19 +4,19 @@ from rdflib.term import URIRef
 from datasources.triples import SPARQLTripleStore
 
 from fairifier.termmapping import TermMapper
+import os
+
+# triple_addr = 'http://172.18.22.17:3030/ds'
+# endpoint = 'http://172.18.22.17:7200/repositories/data'
+# endpoint = 'http://172.18.22.17:7200/repositories/johan_test'
+endpoint = 'http://localhost:7200/repositories/data'
+endpoint = os.environ.get("ENDPOINT_URL", endpoint)
+print("Using SPARQL endpoint: " + endpoint)
+mapper = TermMapper(SPARQLTripleStore(endpoint, update_endpoint=endpoint + '/statements'))
 
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 CORS(app)
-# cors = CORS(app, resource={
-#     r'/*': {
-#         'origins': '*'
-#     }
-# })
-
-# triple_addr = 'http://172.18.22.17:3030/ds'
-endpoint = 'http://172.18.22.17:7200/repositories/data'
-mapper = TermMapper(SPARQLTripleStore(endpoint, update_endpoint=endpoint + '/statements'))
 
 @app.route('/classes', methods=['GET'])
 def get_classes():
