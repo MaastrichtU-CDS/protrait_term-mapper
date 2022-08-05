@@ -126,6 +126,8 @@ class TermMapper extends React.Component {
 
     listMappings() {
         return (
+            <div id="stored-mappings">
+                <h2>Stored mappings</h2>
                 <table>
                     <thead>
                         <tr>
@@ -148,13 +150,16 @@ class TermMapper extends React.Component {
                     }
                     </tbody>
                 </table>
+            </div>
         )
     }
 
     render() {
         return (
             <div className={"Termmapper"}>
-
+                <h2>Add mapping</h2>
+                <p>Select an information element on the right. Afterwards, select a local value stored for this information element in the middle column. Finally, select the standardized term from the list on the right.<br/>
+                After selecting the standardized term (on the right), the mapping is automatically stored.</p>
                 {/* Class select */}
                 <select size={20}>
                     <option disabled value> -- Information Elements -- </option>
