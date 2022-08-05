@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const apiEndpoint = 'http://localhost:5000'
+let selectedEndpoint = 'http://localhost:5000'
+if (process.env.NODE_ENV==='production') {
+    selectedEndpoint = window.location.protocol + "//" + window.location.hostname + ":" + window.location.port + window.location.pathname
+}
+const apiEndpoint = selectedEndpoint
+console.log("Using backend on " + apiEndpoint)
 
 function do_request(method, endpoint, handler, payload = null) {
     /**
