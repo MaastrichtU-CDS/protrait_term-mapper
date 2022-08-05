@@ -45,7 +45,7 @@ def get_local_values():
 def get_mappings():
     mappings = mapper.get_mappings()
     return {
-        'mappings': mappings
+        'storedMappings': mappings
     }
 
 @app.route("/add-mapping", methods=['POST'])
@@ -70,7 +70,7 @@ def delete_mapping():
 
     mapper.delete_mapping(source_class, value, target)
     return {
-        'mappings': mapper.get_mappings()
+        'storedMappings': mapper.get_mappings()
     }
 
 if __name__ == "__main__":

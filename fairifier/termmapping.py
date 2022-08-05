@@ -294,54 +294,43 @@ class TermMapper():
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             DELETE {
                 GRAPH <http://data.local/mapping> {
-                    ?target owl:equivalentClass [
-                        rdf:type owl:Class;
-                        owl:intersectionOf [
-                            rdf:first ?class;
-                            rdf:rest [
-                                rdf:first [
-                                    rdf:type owl:Class;
-                                    owl:unionOf [
-                                        rdf:first [
-                                            rdf:type owl:Restriction;
+                    ?target owl:equivalentClass ?blank001.
+                    ?blank001 rdf:type owl:Class;
+                        owl:intersectionOf ?blank002.
+                        ?blank002 rdf:first ?class;
+                            rdf:rest ?blank003.
+                                ?blank003 rdf:first ?blank004.
+                                    ?blank004 rdf:type owl:Class;
+                                    owl:unionOf ?blank005.
+                                        ?blank005 rdf:first ?blank006.
+                                            ?blank006 rdf:type owl:Restriction;
                                             owl:hasValue ?value;
-                                            owl:onProperty roo:local_value;
-                                        ];
-                                        rdf:rest rdf:nil;
-                                    ]
-                                ];
-                                rdf:rest rdf:nil;
-                            ]
-                        ]
-                    ].
+                                            owl:onProperty roo:local_value.
+                                        ?blank005 rdf:rest rdf:nil.
+                                ?blank003 rdf:rest rdf:nil.
                 }
             }
             WHERE {
-                GRAPH <http://data.local/mapping> {
-                    ?target owl:equivalentClass [
-                        rdf:type owl:Class;
-                        owl:intersectionOf [
-                            rdf:first ?class;
-                            rdf:rest [
-                                rdf:first [
-                                    rdf:type owl:Class;
-                                    owl:unionOf [
-                                        rdf:first [
-                                            rdf:type owl:Restriction;
-                                            owl:hasValue ?value;
-                                            owl:onProperty roo:local_value;
-                                        ];
-                                        rdf:rest rdf:nil;
-                                    ]
-                                ];
-                                rdf:rest rdf:nil;
-                            ]
-                        ]
-                    ].
-                }
                 BIND (<%s> AS ?class).
-                BIND (<%s> AS ?value).
+                BIND ("%s" AS ?value).
                 BIND (<%s> AS ?target).
+
+                GRAPH <http://data.local/mapping> {
+                    ?target owl:equivalentClass ?blank001.
+                    ?blank001 rdf:type owl:Class;
+                        owl:intersectionOf ?blank002.
+                        ?blank002 rdf:first ?class;
+                            rdf:rest ?blank003.
+                                ?blank003 rdf:first ?blank004.
+                                    ?blank004 rdf:type owl:Class;
+                                    owl:unionOf ?blank005.
+                                        ?blank005 rdf:first ?blank006.
+                                            ?blank006 rdf:type owl:Restriction;
+                                            owl:hasValue ?value;
+                                            owl:onProperty roo:local_value.
+                                        ?blank005 rdf:rest rdf:nil.
+                                ?blank003 rdf:rest rdf:nil.
+                }
             }
         """ % (classUri, value, targetUri)
         self.tripleStore.sparql_update(query)
