@@ -166,7 +166,7 @@ class TermMapper():
                 FILTER (datatype(?value) = xsd:string).
                 OPTIONAL { ?class rdfs:label ?classLabel }.
                 OPTIONAL { ?target rdfs:label ?targetLabel }.
-            } ORDER BY ?classLabel ?targetLabel
+            } ORDER BY ?class ?target
         """
 
         results = self.tripleStore.sparql_get(query)
