@@ -48,7 +48,7 @@ class TermMapper extends React.Component {
         do_request('GET', '/mappings', (json) => {
             //(re-)renders the component at React's on convenience
             this.setState({
-                storedMappings: json.mappings
+                storedMappings: json.storedMappings
             });
         });
     }
@@ -124,6 +124,24 @@ class TermMapper extends React.Component {
         }
     }
 
+    handleDeleteMapping(myClass, value, target) {
+        let formData = new FormData()
+        formData.append('class', myClass)
+        formData.append('value', value)
+        formData.append('target', target)
+
+        do_request(
+            'POST',
+            '/delete-mapping',
+            (json) => {
+                this.setState({
+                    storedMappings: json.storedMappings
+                })
+            },
+            formData
+        );
+    }
+
     listMappings() {
         return (
             <div id="stored-mappings">
@@ -144,6 +162,7 @@ class TermMapper extends React.Component {
                                     <td>{mapping.classLabel}</td>
                                     <td>{mapping.value}</td>
                                     <td>{mapping.targetLabel}</td>
+                                    <td><input type="button" value="Delete" onClick={() => this.handleDeleteMapping(mapping.class, mapping.value, mapping.target)}/></td>
                                 </tr>
                             )
                         })
