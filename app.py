@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, send_from_directory
 from flask_cors import CORS
 from rdflib.term import URIRef
 from datasources.triples import SPARQLTripleStore
@@ -14,9 +14,14 @@ endpoint = os.environ.get("ENDPOINT_URL", endpoint)
 print("Using SPARQL endpoint: " + endpoint)
 mapper = TermMapper(SPARQLTripleStore(endpoint, update_endpoint=endpoint + '/statements'))
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="build", static_url_path='')
 app.config['CORS_HEADERS'] = 'Content-Type'
 CORS(app)
+
+# Serve the react built content
+@app.route("/", defaults={'path':''})
+def serve(path):
+    return send_from_directory(app.static_folder,'index.html')
 
 @app.route('/classes', methods=['GET'])
 def get_classes():
