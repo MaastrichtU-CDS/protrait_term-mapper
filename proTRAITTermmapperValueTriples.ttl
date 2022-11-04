@@ -17,7 +17,7 @@ prefix uo: <http://purl.obolibrary.org/obo/UO_>
 prefix time: <http://www.w3.org/2006/time#>
 prefix protrait: <http://www.protrait.nl/> 
 
-                            #gen_treat_centre ncit:C19326
+#gen_treat_centre ncit:C19326
                             protrait:Not_applicable_in_case_of_photon_RT_ 
                                 rdfs:subClassOf ncit:C19326; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1457,8 +1457,8 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf ncit:C81229; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_tumoursite ncit:C3263                    
-                                protrait:Prostate 
+                            #gen_tumoursite ncit:C3263
+                            protrait:Prostate 
                                 rdfs:subClassOf ncit:C3263; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
@@ -1542,7 +1542,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf ncit:C3263; 
                                 protrait:LC_Code "17"^^xsd:integer.
                             
-                            #gen_othercancerroo:personalHistoryOfMalignantNeoplasm
+                            #gen_othercancer roo:personalHistoryOfMalignantNeoplasm
                             protrait:No 
                                 rdfs:subClassOf roo:personalHistoryOfMalignantNeoplasm; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1552,7 +1552,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf roo:personalHistoryOfMalignantNeoplasm; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_oth_c_rtroo:previousRadiotherapy
+                            #gen_oth_c_rt roo:previousRadiotherapy
                             protrait:No 
                                 rdfs:subClassOf roo:previousRadiotherapy; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1562,7 +1562,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf roo:previousRadiotherapy; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_othercancer_2#gen_oth_c_rt_2#gen_othercancer_3#gen_oth_c_rt_3#gen_oth_c_rt_reirrroo:reirradiation
+                            #gen_othercancer_2 #gen_oth_c_rt_2 #gen_othercancer_3 #gen_oth_c_rt_3 #gen_oth_c_rt_reirr roo:reirradiation
                             protrait:No 
                                 rdfs:subClassOf roo:reirradiation; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1572,7 +1572,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf roo:reirradiation; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_rt_treatmentncit:C15313
+                            #gen_rt_treatment ncit:C15313
                             protrait:Photons 
                                 rdfs:subClassOf ncit:C15313; 
                                 protrait:LC_Code "1"^^xsd:integer.
@@ -1597,7 +1597,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf ncit:C15313; 
                                 protrait:LC_Code "5"^^xsd:integer.
                             
-                            #gen_plan_comparisonroo:planningComparison
+                            #gen_plan_comparison roo:planningComparison
                             protrait:No 
                                 rdfs:subClassOf roo:planningComparison; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1607,7 +1607,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf roo:planningComparison; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_comp_outcomeroo:planningComparisonOutcome
+                            #gen_comp_outcome roo:planningComparisonOutcome
                             protrait:No_indication_for_proton_therapy 
                                 rdfs:subClassOf roo:planningComparisonOutcome; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1617,7 +1617,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf roo:planningComparisonOutcome; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_dec_protonsncit:C66897
+                            #gen_dec_protons ncit:C66897
                             protrait:No 
                                 rdfs:subClassOf ncit:C66897; 
                                 protrait:LC_Code "0"^^xsd:integer.
@@ -1627,7 +1627,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 rdfs:subClassOf ncit:C66897; 
                                 protrait:LC_Code "1"^^xsd:integer.
                             
-                            #gen_reason_protonsroo:reasonNegativeProtonTherapyWithPositivePlanningComparison
+                            #gen_reason_protons roo:reasonNegativeProtonTherapyWithPositivePlanningComparison
                             protrait:Distance_to_proton_centre 
                                 rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
                                 protrait:LC_Code "1"^^xsd:integer.
@@ -1648,7 +1648,7 @@ prefix protrait: <http://www.protrait.nl/>
                                 protrait:LC_Code "4"^^xsd:integer.
                             
                             
-                            protrait:Other_namelyï¿½ 
+                            protrait:Other_namely… 
                                 rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
                                 protrait:LC_Code "5"^^xsd:integer.
                             
