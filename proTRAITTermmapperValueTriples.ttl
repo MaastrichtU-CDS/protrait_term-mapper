@@ -1,0 +1,1655 @@
+
+prefix rr: <http://www.w3.org/ns/r2rml#>
+prefix ex: <http://example.com/ns#>
+prefix map: <http://mapping.local/>
+prefix sty: <http://purl.bioontology.org/ontology/STY/>
+prefix sio: <http://semanticscience.org/resource/SIO_>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
+prefix roo: <http://www.cancerdata.org/roo/>
+prefix icd: <http://purl.bioontology.org/ontology/ICD10/>
+prefix skos: <http://www.w3.org/2008/05/skos#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix uo: <http://purl.obolibrary.org/obo/UO_>
+prefix time: <http://www.w3.org/2006/time#>
+prefix protrait: <http://www.protrait.nl/> 
+
+                            #gen_treat_centre ncit:C19326
+                            protrait:Not_applicable_in_case_of_photon_RT_ 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:GPTC_Groningen 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:HollandPTC_Delft 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:MAASTRO_protonen 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:APTC_Amsterdam 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            #gen_refer_centre ncit:C19326
+                            protrait:Noordwest_ziekenhuisgroep___Alkmaar 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Noordwest_ziekenhuisgroep___Den_Helder 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Het_Nederlands_Kankerinstituut___Antoni_van_Leeuwenhoek_ziekenhuis 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            
+                            protrait:VUmc 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "6"^^xsd:integer.
+                            
+                            
+                            protrait:VUmc___Dijklander_ziekenhuis 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "7"^^xsd:integer.
+                            
+                            
+                            protrait:AMC 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "8"^^xsd:integer.
+                            
+                            
+                            protrait:AMC___Flevoziekenhuis 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "9"^^xsd:integer.
+                            
+                            
+                            protrait:Reinier_de_Graaf_groep 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "10"^^xsd:integer.
+                            
+                            
+                            protrait:RCWest_Radiotherapiecentrum_West 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "15"^^xsd:integer.
+                            
+                            
+                            protrait:Haga_Radiotherapie 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "20"^^xsd:integer.
+                            
+                            
+                            protrait:Radiotherapiegroep___Deventer 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "25"^^xsd:integer.
+                            
+                            
+                            protrait:Radiotherapiegroep___Arnhem 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "26"^^xsd:integer.
+                            
+                            
+                            protrait:Radiotherapiegroep___Ede 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "27"^^xsd:integer.
+                            
+                            
+                            protrait:Catharina_ziekenhuis 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "30"^^xsd:integer.
+                            
+                            
+                            protrait:MST 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "35"^^xsd:integer.
+                            
+                            
+                            protrait:UMCG 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "40"^^xsd:integer.
+                            
+                            
+                            protrait:Radiotherapeutisch_Instituut_Friesland 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "45"^^xsd:integer.
+                            
+                            
+                            protrait:LUMC 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "50"^^xsd:integer.
+                            
+                            
+                            protrait:MAASTRO 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "55"^^xsd:integer.
+                            
+                            
+                            protrait:Radboud_UMC 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "60"^^xsd:integer.
+                            
+                            
+                            protrait:Erasmus_MC 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "65"^^xsd:integer.
+                            
+                            
+                            protrait:Erasmus_MC___Dordrecht 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "66"^^xsd:integer.
+                            
+                            
+                            protrait:Instituut_Verbeeten___Tilburg 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "70"^^xsd:integer.
+                            
+                            
+                            protrait:Instituut_Verbeeten___Breda 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "71"^^xsd:integer.
+                            
+                            
+                            protrait:Institiuut_Verbeeten___s_Hertogenbosch 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "72"^^xsd:integer.
+                            
+                            
+                            protrait:UMCU 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "80"^^xsd:integer.
+                            
+                            
+                            protrait:Prinses_Maxima_Centrum 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "81"^^xsd:integer.
+                            
+                            
+                            protrait:Zuidwest_Radiotherapeutisch_Instituut___Vlissingen 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "85"^^xsd:integer.
+                            
+                            
+                            protrait:Zuidwest_Radiotherapeutisch_instituut___Roosendaal 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "86"^^xsd:integer.
+                            
+                            
+                            protrait:Radiotherapeutisch_Centrum_Zwolle 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "90"^^xsd:integer.
+                            
+                            
+                            protrait:Referral_from_a_non_radiotherapy_centre_in_the_Netherlands 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "95"^^xsd:integer.
+                            
+                            
+                            protrait:Referral_from_abroad 
+                                rdfs:subClassOf ncit:C19326; 
+                                protrait:LC_Code "96"^^xsd:integer.
+                            
+                            #gen_gender ncit:C28421
+                            protrait:Undifferentiated 
+                                rdfs:subClassOf ncit:C28421; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Male 
+                                rdfs:subClassOf ncit:C28421; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Female 
+                                rdfs:subClassOf ncit:C28421; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Unknown 
+                                rdfs:subClassOf ncit:C28421; 
+                                protrait:LC_Code "9"^^xsd:integer.
+                            
+                            #gen_age roo:C100002
+                            protrait:1 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:2 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:3 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:4 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            
+                            protrait:5 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            
+                            protrait:6 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "6"^^xsd:integer.
+                            
+                            
+                            protrait:7 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "7"^^xsd:integer.
+                            
+                            
+                            protrait:8 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "8"^^xsd:integer.
+                            
+                            
+                            protrait:9 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "9"^^xsd:integer.
+                            
+                            
+                            protrait:10 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "10"^^xsd:integer.
+                            
+                            
+                            protrait:11 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "11"^^xsd:integer.
+                            
+                            
+                            protrait:12 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "12"^^xsd:integer.
+                            
+                            
+                            protrait:13 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "13"^^xsd:integer.
+                            
+                            
+                            protrait:14 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "14"^^xsd:integer.
+                            
+                            
+                            protrait:15 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "15"^^xsd:integer.
+                            
+                            
+                            protrait:16 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "16"^^xsd:integer.
+                            
+                            
+                            protrait:17 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "17"^^xsd:integer.
+                            
+                            
+                            protrait:18 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "18"^^xsd:integer.
+                            
+                            
+                            protrait:19 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "19"^^xsd:integer.
+                            
+                            
+                            protrait:20 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "20"^^xsd:integer.
+                            
+                            
+                            protrait:21 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "21"^^xsd:integer.
+                            
+                            
+                            protrait:22 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "22"^^xsd:integer.
+                            
+                            
+                            protrait:23 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "23"^^xsd:integer.
+                            
+                            
+                            protrait:24 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "24"^^xsd:integer.
+                            
+                            
+                            protrait:25 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "25"^^xsd:integer.
+                            
+                            
+                            protrait:26 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "26"^^xsd:integer.
+                            
+                            
+                            protrait:27 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "27"^^xsd:integer.
+                            
+                            
+                            protrait:28 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "28"^^xsd:integer.
+                            
+                            
+                            protrait:29 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "29"^^xsd:integer.
+                            
+                            
+                            protrait:30 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "30"^^xsd:integer.
+                            
+                            
+                            protrait:31 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "31"^^xsd:integer.
+                            
+                            
+                            protrait:32 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "32"^^xsd:integer.
+                            
+                            
+                            protrait:33 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "33"^^xsd:integer.
+                            
+                            
+                            protrait:34 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "34"^^xsd:integer.
+                            
+                            
+                            protrait:35 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "35"^^xsd:integer.
+                            
+                            
+                            protrait:36 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "36"^^xsd:integer.
+                            
+                            
+                            protrait:37 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "37"^^xsd:integer.
+                            
+                            
+                            protrait:38 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "38"^^xsd:integer.
+                            
+                            
+                            protrait:39 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "39"^^xsd:integer.
+                            
+                            
+                            protrait:40 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "40"^^xsd:integer.
+                            
+                            
+                            protrait:41 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "41"^^xsd:integer.
+                            
+                            
+                            protrait:42 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "42"^^xsd:integer.
+                            
+                            
+                            protrait:43 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "43"^^xsd:integer.
+                            
+                            
+                            protrait:44 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "44"^^xsd:integer.
+                            
+                            
+                            protrait:45 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "45"^^xsd:integer.
+                            
+                            
+                            protrait:46 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "46"^^xsd:integer.
+                            
+                            
+                            protrait:47 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "47"^^xsd:integer.
+                            
+                            
+                            protrait:48 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "48"^^xsd:integer.
+                            
+                            
+                            protrait:49 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "49"^^xsd:integer.
+                            
+                            
+                            protrait:50 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "50"^^xsd:integer.
+                            
+                            
+                            protrait:51 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "51"^^xsd:integer.
+                            
+                            
+                            protrait:52 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "52"^^xsd:integer.
+                            
+                            
+                            protrait:53 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "53"^^xsd:integer.
+                            
+                            
+                            protrait:54 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "54"^^xsd:integer.
+                            
+                            
+                            protrait:55 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "55"^^xsd:integer.
+                            
+                            
+                            protrait:56 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "56"^^xsd:integer.
+                            
+                            
+                            protrait:57 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "57"^^xsd:integer.
+                            
+                            
+                            protrait:58 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "58"^^xsd:integer.
+                            
+                            
+                            protrait:59 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "59"^^xsd:integer.
+                            
+                            
+                            protrait:60 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "60"^^xsd:integer.
+                            
+                            
+                            protrait:61 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "61"^^xsd:integer.
+                            
+                            
+                            protrait:62 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "62"^^xsd:integer.
+                            
+                            
+                            protrait:63 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "63"^^xsd:integer.
+                            
+                            
+                            protrait:64 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "64"^^xsd:integer.
+                            
+                            
+                            protrait:65 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "65"^^xsd:integer.
+                            
+                            
+                            protrait:66 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "66"^^xsd:integer.
+                            
+                            
+                            protrait:67 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "67"^^xsd:integer.
+                            
+                            
+                            protrait:68 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "68"^^xsd:integer.
+                            
+                            
+                            protrait:69 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "69"^^xsd:integer.
+                            
+                            
+                            protrait:70 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "70"^^xsd:integer.
+                            
+                            
+                            protrait:71 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "71"^^xsd:integer.
+                            
+                            
+                            protrait:72 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "72"^^xsd:integer.
+                            
+                            
+                            protrait:73 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "73"^^xsd:integer.
+                            
+                            
+                            protrait:74 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "74"^^xsd:integer.
+                            
+                            
+                            protrait:75 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "75"^^xsd:integer.
+                            
+                            
+                            protrait:76 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "76"^^xsd:integer.
+                            
+                            
+                            protrait:77 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "77"^^xsd:integer.
+                            
+                            
+                            protrait:78 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "78"^^xsd:integer.
+                            
+                            
+                            protrait:79 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "79"^^xsd:integer.
+                            
+                            
+                            protrait:80 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "80"^^xsd:integer.
+                            
+                            
+                            protrait:81 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "81"^^xsd:integer.
+                            
+                            
+                            protrait:82 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "82"^^xsd:integer.
+                            
+                            
+                            protrait:83 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "83"^^xsd:integer.
+                            
+                            
+                            protrait:84 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "84"^^xsd:integer.
+                            
+                            
+                            protrait:85 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "85"^^xsd:integer.
+                            
+                            
+                            protrait:86 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "86"^^xsd:integer.
+                            
+                            
+                            protrait:87 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "87"^^xsd:integer.
+                            
+                            
+                            protrait:88 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "88"^^xsd:integer.
+                            
+                            
+                            protrait:89 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "89"^^xsd:integer.
+                            
+                            
+                            protrait:90 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "90"^^xsd:integer.
+                            
+                            
+                            protrait:91 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "91"^^xsd:integer.
+                            
+                            
+                            protrait:92 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "92"^^xsd:integer.
+                            
+                            
+                            protrait:93 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "93"^^xsd:integer.
+                            
+                            
+                            protrait:94 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "94"^^xsd:integer.
+                            
+                            
+                            protrait:95 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "95"^^xsd:integer.
+                            
+                            
+                            protrait:96 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "96"^^xsd:integer.
+                            
+                            
+                            protrait:97 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "97"^^xsd:integer.
+                            
+                            
+                            protrait:98 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "98"^^xsd:integer.
+                            
+                            
+                            protrait:99 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "99"^^xsd:integer.
+                            
+                            
+                            protrait:100 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "100"^^xsd:integer.
+                            
+                            
+                            protrait:101 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "101"^^xsd:integer.
+                            
+                            
+                            protrait:102 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "102"^^xsd:integer.
+                            
+                            
+                            protrait:103 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "103"^^xsd:integer.
+                            
+                            
+                            protrait:104 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "104"^^xsd:integer.
+                            
+                            
+                            protrait:105 
+                                rdfs:subClassOf roo:C100002; 
+                                protrait:LC_Code "105"^^xsd:integer.
+                            
+                            #gen_year_birth ncit:C25155
+                            protrait:1910 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1910"^^xsd:integer.
+                            
+                            
+                            protrait:1911 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1911"^^xsd:integer.
+                            
+                            
+                            protrait:1912 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1912"^^xsd:integer.
+                            
+                            
+                            protrait:1913 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1913"^^xsd:integer.
+                            
+                            
+                            protrait:1914 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1914"^^xsd:integer.
+                            
+                            
+                            protrait:1915 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1915"^^xsd:integer.
+                            
+                            
+                            protrait:1916 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1916"^^xsd:integer.
+                            
+                            
+                            protrait:1917 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1917"^^xsd:integer.
+                            
+                            
+                            protrait:1918 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1918"^^xsd:integer.
+                            
+                            
+                            protrait:1919 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1919"^^xsd:integer.
+                            
+                            
+                            protrait:1920 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1920"^^xsd:integer.
+                            
+                            
+                            protrait:1921 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1921"^^xsd:integer.
+                            
+                            
+                            protrait:1922 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1922"^^xsd:integer.
+                            
+                            
+                            protrait:1923 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1923"^^xsd:integer.
+                            
+                            
+                            protrait:1924 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1924"^^xsd:integer.
+                            
+                            
+                            protrait:1925 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1925"^^xsd:integer.
+                            
+                            
+                            protrait:1926 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1926"^^xsd:integer.
+                            
+                            
+                            protrait:1927 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1927"^^xsd:integer.
+                            
+                            
+                            protrait:1928 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1928"^^xsd:integer.
+                            
+                            
+                            protrait:1929 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1929"^^xsd:integer.
+                            
+                            
+                            protrait:1930 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1930"^^xsd:integer.
+                            
+                            
+                            protrait:1931 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1931"^^xsd:integer.
+                            
+                            
+                            protrait:1932 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1932"^^xsd:integer.
+                            
+                            
+                            protrait:1933 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1933"^^xsd:integer.
+                            
+                            
+                            protrait:1934 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1934"^^xsd:integer.
+                            
+                            
+                            protrait:1935 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1935"^^xsd:integer.
+                            
+                            
+                            protrait:1936 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1936"^^xsd:integer.
+                            
+                            
+                            protrait:1937 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1937"^^xsd:integer.
+                            
+                            
+                            protrait:1938 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1938"^^xsd:integer.
+                            
+                            
+                            protrait:1939 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1939"^^xsd:integer.
+                            
+                            
+                            protrait:1940 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1940"^^xsd:integer.
+                            
+                            
+                            protrait:1941 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1941"^^xsd:integer.
+                            
+                            
+                            protrait:1942 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1942"^^xsd:integer.
+                            
+                            
+                            protrait:1943 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1943"^^xsd:integer.
+                            
+                            
+                            protrait:1944 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1944"^^xsd:integer.
+                            
+                            
+                            protrait:1945 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1945"^^xsd:integer.
+                            
+                            
+                            protrait:1946 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1946"^^xsd:integer.
+                            
+                            
+                            protrait:1947 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1947"^^xsd:integer.
+                            
+                            
+                            protrait:1948 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1948"^^xsd:integer.
+                            
+                            
+                            protrait:1949 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1949"^^xsd:integer.
+                            
+                            
+                            protrait:1950 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1950"^^xsd:integer.
+                            
+                            
+                            protrait:1951 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1951"^^xsd:integer.
+                            
+                            
+                            protrait:1952 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1952"^^xsd:integer.
+                            
+                            
+                            protrait:1953 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1953"^^xsd:integer.
+                            
+                            
+                            protrait:1954 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1954"^^xsd:integer.
+                            
+                            
+                            protrait:1955 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1955"^^xsd:integer.
+                            
+                            
+                            protrait:1956 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1956"^^xsd:integer.
+                            
+                            
+                            protrait:1957 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1957"^^xsd:integer.
+                            
+                            
+                            protrait:1958 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1958"^^xsd:integer.
+                            
+                            
+                            protrait:1959 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1959"^^xsd:integer.
+                            
+                            
+                            protrait:1960 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1960"^^xsd:integer.
+                            
+                            
+                            protrait:1961 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1961"^^xsd:integer.
+                            
+                            
+                            protrait:1962 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1962"^^xsd:integer.
+                            
+                            
+                            protrait:1963 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1963"^^xsd:integer.
+                            
+                            
+                            protrait:1964 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1964"^^xsd:integer.
+                            
+                            
+                            protrait:1965 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1965"^^xsd:integer.
+                            
+                            
+                            protrait:1966 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1966"^^xsd:integer.
+                            
+                            
+                            protrait:1967 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1967"^^xsd:integer.
+                            
+                            
+                            protrait:1968 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1968"^^xsd:integer.
+                            
+                            
+                            protrait:1969 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1969"^^xsd:integer.
+                            
+                            
+                            protrait:1970 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1970"^^xsd:integer.
+                            
+                            
+                            protrait:1971 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1971"^^xsd:integer.
+                            
+                            
+                            protrait:1972 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1972"^^xsd:integer.
+                            
+                            
+                            protrait:1973 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1973"^^xsd:integer.
+                            
+                            
+                            protrait:1974 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1974"^^xsd:integer.
+                            
+                            
+                            protrait:1975 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1975"^^xsd:integer.
+                            
+                            
+                            protrait:1976 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1976"^^xsd:integer.
+                            
+                            
+                            protrait:1977 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1977"^^xsd:integer.
+                            
+                            
+                            protrait:1978 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1978"^^xsd:integer.
+                            
+                            
+                            protrait:1979 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1979"^^xsd:integer.
+                            
+                            
+                            protrait:1980 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1980"^^xsd:integer.
+                            
+                            
+                            protrait:1981 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1981"^^xsd:integer.
+                            
+                            
+                            protrait:1982 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1982"^^xsd:integer.
+                            
+                            
+                            protrait:1983 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1983"^^xsd:integer.
+                            
+                            
+                            protrait:1984 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1984"^^xsd:integer.
+                            
+                            
+                            protrait:1985 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1985"^^xsd:integer.
+                            
+                            
+                            protrait:1986 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1986"^^xsd:integer.
+                            
+                            
+                            protrait:1987 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1987"^^xsd:integer.
+                            
+                            
+                            protrait:1988 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1988"^^xsd:integer.
+                            
+                            
+                            protrait:1989 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1989"^^xsd:integer.
+                            
+                            
+                            protrait:1990 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1990"^^xsd:integer.
+                            
+                            
+                            protrait:1991 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1991"^^xsd:integer.
+                            
+                            
+                            protrait:1992 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1992"^^xsd:integer.
+                            
+                            
+                            protrait:1993 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1993"^^xsd:integer.
+                            
+                            
+                            protrait:1994 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1994"^^xsd:integer.
+                            
+                            
+                            protrait:1995 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1995"^^xsd:integer.
+                            
+                            
+                            protrait:1996 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1996"^^xsd:integer.
+                            
+                            
+                            protrait:1997 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1997"^^xsd:integer.
+                            
+                            
+                            protrait:1998 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1998"^^xsd:integer.
+                            
+                            
+                            protrait:1999 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "1999"^^xsd:integer.
+                            
+                            
+                            protrait:2000 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2000"^^xsd:integer.
+                            
+                            
+                            protrait:2001 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2001"^^xsd:integer.
+                            
+                            
+                            protrait:2002 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2002"^^xsd:integer.
+                            
+                            
+                            protrait:2003 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2003"^^xsd:integer.
+                            
+                            
+                            protrait:2004 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2004"^^xsd:integer.
+                            
+                            
+                            protrait:2005 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2005"^^xsd:integer.
+                            
+                            
+                            protrait:2006 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2006"^^xsd:integer.
+                            
+                            
+                            protrait:2007 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2007"^^xsd:integer.
+                            
+                            
+                            protrait:2008 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2008"^^xsd:integer.
+                            
+                            
+                            protrait:2009 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2009"^^xsd:integer.
+                            
+                            
+                            protrait:2010 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2010"^^xsd:integer.
+                            
+                            
+                            protrait:2011 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2011"^^xsd:integer.
+                            
+                            
+                            protrait:2012 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2012"^^xsd:integer.
+                            
+                            
+                            protrait:2013 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2013"^^xsd:integer.
+                            
+                            
+                            protrait:2014 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2014"^^xsd:integer.
+                            
+                            
+                            protrait:2015 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2015"^^xsd:integer.
+                            
+                            
+                            protrait:2016 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2016"^^xsd:integer.
+                            
+                            
+                            protrait:2017 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2017"^^xsd:integer.
+                            
+                            
+                            protrait:2018 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2018"^^xsd:integer.
+                            
+                            
+                            protrait:2019 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2019"^^xsd:integer.
+                            
+                            
+                            protrait:2020 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2020"^^xsd:integer.
+                            
+                            
+                            protrait:2021 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2021"^^xsd:integer.
+                            
+                            
+                            protrait:2022 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2022"^^xsd:integer.
+                            
+                            
+                            protrait:2023 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2023"^^xsd:integer.
+                            
+                            
+                            protrait:2024 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2024"^^xsd:integer.
+                            
+                            
+                            protrait:2025 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2025"^^xsd:integer.
+                            
+                            
+                            protrait:2026 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2026"^^xsd:integer.
+                            
+                            
+                            protrait:2027 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2027"^^xsd:integer.
+                            
+                            
+                            protrait:2028 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2028"^^xsd:integer.
+                            
+                            
+                            protrait:2029 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2029"^^xsd:integer.
+                            
+                            
+                            protrait:2030 
+                                rdfs:subClassOf ncit:C25155; 
+                                protrait:LC_Code "2030"^^xsd:integer.
+                            
+                            #gen_education ncit:C17953
+                            protrait:No_education_did_not_finish_primary_education_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Primary_education_basisschool___lagere_school_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Preparatory_vocational_education_LBO\_LTS\_LEAO\_LHNO\_huishoudschool\_VMBO_B\_VMBO_K_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:General_secondary_education_MAVO\_M_ULO\_MBO_kort\_VMBO_TL_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            
+                            protrait:Secondary_vocational_education_MBO_lang\_MTS\_MEAO_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            
+                            protrait:Higher_general_and_preparatory_scientific_education_HAVO\_VWO\_HBS_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "8"^^xsd:integer.
+                            
+                            
+                            protrait:Higher_professional_education_HBO\_HTS\_HEAO_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "9"^^xsd:integer.
+                            
+                            
+                            protrait:Scientific_education_WO_Universiteit_ 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "10"^^xsd:integer.
+                            
+                            
+                            protrait:Unknown 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "999"^^xsd:integer.
+                            
+                            
+                            protrait:Other 
+                                rdfs:subClassOf ncit:C17953; 
+                                protrait:LC_Code "11"^^xsd:integer.
+                            
+                            #gen_relation ncit:C25188
+                            protrait:Married 
+                                rdfs:subClassOf ncit:C25188; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Domestic_partner 
+                                rdfs:subClassOf ncit:C25188; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Long_distance_relationship___In_a_relationship_but_not_living_together 
+                                rdfs:subClassOf ncit:C25188; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:Widowed 
+                                rdfs:subClassOf ncit:C25188; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            
+                            protrait:Divorced 
+                                rdfs:subClassOf ncit:C25188; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            
+                            protrait:Single 
+                                rdfs:subClassOf ncit:C25188; 
+                                protrait:LC_Code "6"^^xsd:integer.
+                            
+                            #gen_smoking ncit:C19796
+                            protrait:No 
+                                rdfs:subClassOf ncit:C19796; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes\_in_the_past_ex_smoker_ 
+                                rdfs:subClassOf ncit:C19796; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Yes\_current_smoker 
+                                rdfs:subClassOf ncit:C19796; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            #gen_alcohol ncit:C81229
+                            protrait:No 
+                                rdfs:subClassOf ncit:C81229; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes 
+                                rdfs:subClassOf ncit:C81229; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_tumoursite ncit:C3263                    
+                                protrait:Prostate 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Central_nervous_system___Low_grade_glioma 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Central_nervous_system___Meningeoma 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:Central_nervous_system___Base_of_skull 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            
+                            protrait:Central_nervous_system___Craniospinal_axis 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            
+                            protrait:Central_nervous_system___Other_tumour_sites 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "6"^^xsd:integer.
+                            
+                            
+                            protrait:Head_and_neck 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "7"^^xsd:integer.
+                            
+                            
+                            protrait:Breast 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "8"^^xsd:integer.
+                            
+                            
+                            protrait:Lung 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "9"^^xsd:integer.
+                            
+                            
+                            protrait:Esophageal 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "10"^^xsd:integer.
+                            
+                            
+                            protrait:Sarcoma 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "11"^^xsd:integer.
+                            
+                            
+                            protrait:Lymphoma 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "12"^^xsd:integer.
+                            
+                            
+                            protrait:Paediatric___Central_nervous_system 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "13"^^xsd:integer.
+                            
+                            
+                            protrait:Paediatric___Craniospinal_axis 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "14"^^xsd:integer.
+                            
+                            
+                            protrait:Paediatric___Other_tumour_sites 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "15"^^xsd:integer.
+                            
+                            
+                            protrait:Eye_melanoma 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "16"^^xsd:integer.
+                            
+                            
+                            protrait:Other_tumour_site 
+                                rdfs:subClassOf ncit:C3263; 
+                                protrait:LC_Code "17"^^xsd:integer.
+                            
+                            #gen_othercancerroo:personalHistoryOfMalignantNeoplasm
+                            protrait:No 
+                                rdfs:subClassOf roo:personalHistoryOfMalignantNeoplasm; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes 
+                                rdfs:subClassOf roo:personalHistoryOfMalignantNeoplasm; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_oth_c_rtroo:previousRadiotherapy
+                            protrait:No 
+                                rdfs:subClassOf roo:previousRadiotherapy; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes 
+                                rdfs:subClassOf roo:previousRadiotherapy; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_othercancer_2#gen_oth_c_rt_2#gen_othercancer_3#gen_oth_c_rt_3#gen_oth_c_rt_reirrroo:reirradiation
+                            protrait:No 
+                                rdfs:subClassOf roo:reirradiation; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes 
+                                rdfs:subClassOf roo:reirradiation; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_rt_treatmentncit:C15313
+                            protrait:Photons 
+                                rdfs:subClassOf ncit:C15313; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Protons 
+                                rdfs:subClassOf ncit:C15313; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Electrons 
+                                rdfs:subClassOf ncit:C15313; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:Intra_Operative 
+                                rdfs:subClassOf ncit:C15313; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            
+                            protrait:Brachy 
+                                rdfs:subClassOf ncit:C15313; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            #gen_plan_comparisonroo:planningComparison
+                            protrait:No 
+                                rdfs:subClassOf roo:planningComparison; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes 
+                                rdfs:subClassOf roo:planningComparison; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_comp_outcomeroo:planningComparisonOutcome
+                            protrait:No_indication_for_proton_therapy 
+                                rdfs:subClassOf roo:planningComparisonOutcome; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Indication_for_proton_therapy 
+                                rdfs:subClassOf roo:planningComparisonOutcome; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_dec_protonsncit:C66897
+                            protrait:No 
+                                rdfs:subClassOf ncit:C66897; 
+                                protrait:LC_Code "0"^^xsd:integer.
+                            
+                            
+                            protrait:Yes 
+                                rdfs:subClassOf ncit:C66897; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            #gen_reason_protonsroo:reasonNegativeProtonTherapyWithPositivePlanningComparison
+                            protrait:Distance_to_proton_centre 
+                                rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
+                                protrait:LC_Code "1"^^xsd:integer.
+                            
+                            
+                            protrait:Benefit_proton_therapy_considered_too_limited 
+                                rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
+                                protrait:LC_Code "2"^^xsd:integer.
+                            
+                            
+                            protrait:Other_treatment_team 
+                                rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
+                                protrait:LC_Code "3"^^xsd:integer.
+                            
+                            
+                            protrait:Tumour_progression 
+                                rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
+                                protrait:LC_Code "4"^^xsd:integer.
+                            
+                            
+                            protrait:Other_namely� 
+                                rdfs:subClassOf roo:reasonNegativeProtonTherapyWithPositivePlanningComparison; 
+                                protrait:LC_Code "5"^^xsd:integer.
+                            
+                            
